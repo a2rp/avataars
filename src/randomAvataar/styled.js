@@ -36,9 +36,13 @@ export const Styled = {
     // select next wrapper
     SelectNextWrapper: styled.div`
         display: flex;
-        gap: 30px;
+        gap: 15px;
         align-items: flex-start;
         margin-bottom: 15px;
+
+        @media (width<500px) {
+            flex-wrap: wrap;
+        }
     `,
 
     Select: styled.select`
@@ -56,6 +60,10 @@ export const Styled = {
     ButtonsContainer: styled.div`
         display: flex;
         gap: 1rem;
+
+        @media (width<500px) {
+            flex-wrap: wrap;
+        }
     `,
     Button: styled.div`
         width: 100%;
