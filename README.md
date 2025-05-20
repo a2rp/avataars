@@ -2,6 +2,8 @@
 
 # 🎨 Random Avatar Generator
 
+live - https://random-avataars-a2rp.netlify.app/
+
 A simple React app to generate random avatars using [Dicebear](https://www.dicebear.com/) avatar styles.
 
 ![alt text](image.png)
