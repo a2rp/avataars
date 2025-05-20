@@ -1,14 +1,37 @@
 # React + Vite
 
+# 🎨 Random Avatar Generator
+
+A simple React app to generate random avatars using [Dicebear](https://www.dicebear.com/) avatar styles.
+
 ![alt text](image.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✨ Features
 
-Currently, two official plugins are available:
+-   Generate avatars in 25+ unique styles
+-   Download avatar as PNG
+-   Copy avatar as SVG code
+-   Fully responsive and styled with `styled-components`
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+-   ReactJS
+-   styled-components
+-   @dicebear/core
+-   react-icons
+-   react-toastify
+-   copy-to-clipboard
+-   html-react-parser
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start the app
+npm run dev
+
+
+
+```
