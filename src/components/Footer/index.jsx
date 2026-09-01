@@ -28,7 +28,11 @@ const Footer = () => {
         <Styled.Wrapper>
             <div className="footerTop">
                 <div className="brand">
-                    <img className="logo" src="/logo.png" alt="Ashish Ranjan" />
+                    <img
+                        className="logo"
+                        src={`${import.meta.env.BASE_URL}logo.png`}
+                        alt="Ashish Ranjan"
+                    />
 
                     <div>
                         <p className="copyright">

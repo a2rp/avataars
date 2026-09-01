@@ -4,7 +4,11 @@ const Header = ({ totalStyles }) => {
     return (
         <Styled.Wrapper>
             <div className="brand">
-                <img className="logo" src="/logo.png" alt="Ashish Ranjan" />
+                <img
+                    className="logo"
+                    src={`${import.meta.env.BASE_URL}logo.png`}
+                    alt="Ashish Ranjan"
+                />
 
                 <div className="brandInfo">
                     <p className="brandName">Random Avataars</p>
