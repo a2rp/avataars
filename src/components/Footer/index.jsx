@@ -8,7 +8,7 @@ import {
     FaLinkedinIn,
     FaYoutube,
 } from "react-icons/fa6";
-import { links, supportLink } from "../../data/links";
+import { links, supportLinks } from "../../data/links";
 import { Styled } from "./styled";
 
 const icons = {
@@ -44,7 +44,7 @@ const Footer = () => {
                             <a
                                 href="https://www.ashishranjan.net"
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                             >
                                 Ashish Ranjan
                             </a>
@@ -52,16 +52,20 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <a
-                    className="support"
-                    href={supportLink.href}
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <FaHeart />
-
-                    <span>{supportLink.label}</span>
-                </a>
+                <div className="supportLinks">
+                    {supportLinks.map((item, index) => (
+                        <a
+                            className="support"
+                            key={item.href}
+                            href={item.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {index === 0 ? <FaHeart /> : null}
+                            <span>{item.label}</span>
+                        </a>
+                    ))}
+                </div>
             </div>
 
             <nav className="footerLinks" aria-label="Footer links">
@@ -74,7 +78,7 @@ const Footer = () => {
                             key={item.id}
                             href={item.href}
                             target={isEmail ? undefined : "_blank"}
-                            rel={isEmail ? undefined : "noreferrer"}
+                            rel={isEmail ? undefined : "noopener noreferrer"}
                         >
                             <Icon />
 

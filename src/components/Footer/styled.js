@@ -69,6 +69,13 @@ export const Styled = {
                 transform 160ms ease;
         }
 
+        .supportLinks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 8px;
+        }
+
         .support:hover {
             background: #333333;
             transform: translateY(-1px);

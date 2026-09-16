@@ -47,3 +47,9 @@ export const supportLink = {
     label: "Support",
     href: "https://a2rp-donation-page.netlify.app/",
 };
+
+export const supportLinks = [
+    supportLink,
+    { label: "Buy Me A Coffee", href: "https://buymeacoffee.com/a2rp" },
+    { label: "Patreon", href: "https://patreon.com/a2rp" },
+];
